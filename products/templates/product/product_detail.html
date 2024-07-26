@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ product.name }}</title>
+</head>
+<body>
+    <h1>{{ product.name }}</h1>
+    <img src="{{ product.image.url }}" alt="{{ product.name }}">
+    <p>Price: ${{ product.price }}</p>
+    <p>Memory: {{ product.memory }}</p>
+    {% if product.screen %}
+        <p>Screen: {{ product.screen }}</p>
+    {% endif %}
+    {% if product.processor %}
+        <p>Processor: {{ product.processor }}</p>
+    {% endif %}
+    {% if product.ram %}
+        <p>RAM: {{ product.ram }}</p>
+    {% endif %}
+    {% if product.video_card %}
+        <p>Video Card: {{ product.video_card }}</p>
+    {% endif %}
+</body>
+</html>

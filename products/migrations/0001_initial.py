@@ -31,7 +31,7 @@ class Migration(migrations.Migration):
                 ('processor', models.CharField(blank=True, max_length=100, null=True)),
                 ('ram', models.CharField(blank=True, max_length=100, null=True)),
                 ('video_card', models.CharField(blank=True, max_length=100, null=True)),
-                ('category', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='products', to='product.category')),
+                ('category', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='products', to='products.category')),
             ],
         ),
     ]
